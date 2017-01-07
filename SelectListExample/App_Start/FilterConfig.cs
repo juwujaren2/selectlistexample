@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace SelectListExample
+namespace SelectListExample.Web
 {
     public class FilterConfig
     {

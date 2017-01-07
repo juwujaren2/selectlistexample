@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SelectListExample.Infrastructure;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
-namespace SelectListExample.Controllers
+namespace SelectListExample.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly Db _db;
+        public HomeController(Db db)
+        {
+            _db = db;
+        }
         public ActionResult Index()
         {
+            SetUnsoldReasonsViewBag();
             return View();
         }
 
@@ -25,6 +29,11 @@ namespace SelectListExample.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        private void SetUnsoldReasonsViewBag()
+        {
+            var items = _db.UnsoldReasons.ToList();
+            ViewBag.UnsoldReasons = items;
         }
     }
 }

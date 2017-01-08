@@ -23,15 +23,15 @@ textarea {
     max-width: 280px;
 }
 li.dropdown-header {
-    /*padding: 0 14px 8px 14px;*/
     padding: 8px 14px;
     margin: 0;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     line-height: 18px;
     background-color: #f7f7f7;
     border-bottom: 1px solid #ebebeb;
     border-radius: 5px 5px 0 0;
+    color: #3276b1;
 }
 .dropdown-menu .divider {
     margin: 0;
@@ -41,12 +41,4 @@ li.dropdown-header {
 }
 .bootstrap-select.btn-group .dropdown-toggle .filter-option {
     color: #fff;
-}
-.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
-    outline: none;
-}
-.bootstrap-select .dropdown-toggle:focus {
-    outline: thin dotted #333333 !important;
-    outline: 5px auto -webkit-focus-ring-color !important;
-    outline-offset: -2px;
 }

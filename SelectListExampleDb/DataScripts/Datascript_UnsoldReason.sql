@@ -8,5 +8,6 @@ BEGIN
 	('Quote','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE()),
 	('Frequency','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE()),
 	('Schedule','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE()),
-	('Spouse/Partner','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE())
+	('Spouse/Partner','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE()),
+	('Other','[Seed]',GETUTCDATE(),1,'[Seed]',GETUTCDATE())
 END

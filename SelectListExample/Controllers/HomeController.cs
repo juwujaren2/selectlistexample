@@ -32,7 +32,9 @@ namespace SelectListExample.Web.Controllers
         }
         private void SetUnsoldReasonsViewBag()
         {
-            var items = _db.UnsoldReasons.ToList();
+            var items = _db.UnsoldReasons.Where(x => x.Text.ToLower() != "other").OrderBy(x => x.Text).ToList();
+            var otherReason = _db.UnsoldReasons.FirstOrDefault(x => x.Text.ToLower() == "other");
+            ViewBag.OtherReason = otherReason;
             ViewBag.UnsoldReasons = items;
         }
     }

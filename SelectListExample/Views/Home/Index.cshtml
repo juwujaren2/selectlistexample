@@ -1,21 +1,38 @@
 ﻿@{
     var unsoldReasons = ViewBag.UnsoldReasons;
+    var otherReason = ViewBag.OtherReason;
 }
 <br/>
 <div class="row">
-    <section class="col-sm-3">
+    <section data-module="practice" class="col-sm-3">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-sm-12">
                 <div class="form-group">
-                    <select class="selectpicker form-control" title="Select reason customer did not buy services..." data-header="Select an unsold reason">
-                        @foreach(var reason in unsoldReasons)
-                        {
-                            <option value="@reason.Id.ToString()">@reason.Text</option>
-                        }
-                        <option data-divider="true"></option>
-                        <option data-icon="glyphicon-credit-card">Take Payment</option>
-
+                    <select name="UnsoldReasonId" class="selectpicker form-control" data-toggle="reason" title="Choose one of the following...">
+                        <optgroup data-icon="glyphicon-shopping-cart" label="Select reason customer did not buy services">
+                            @foreach (var reason in unsoldReasons)
+                            {
+                                <option value="@reason.Id.ToString()">@reason.Text</option>
+                            }
+                            @if (otherReason != null)
+                            {
+                                <option value="@otherReason.Id.ToString()">@otherReason.Text</option>
+                            }
+                        </optgroup>
+                        <optgroup data-icon="glyphicon-credit-card" label="Take payment">
+                            <option value="101">Card</option>
+                            <option value="102">Cash</option>
+                            <option value="103">Check</option>
+                            <option value="104">Onsite</option>
+                        </optgroup>
                     </select>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: none" data-show="@(otherReason != null ? string.Format("reason-{0}", otherReason.Id) : string.Empty)">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="otherReason" placeholder="Enter other reason">
                 </div>
             </div>
         </div>

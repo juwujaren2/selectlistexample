@@ -39,3 +39,14 @@ li.dropdown-header {
 .dropdown-menu {
     padding: 0;
 }
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    color: #fff;
+}
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: none;
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline: thin dotted #333333 !important;
+    outline: 5px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+}

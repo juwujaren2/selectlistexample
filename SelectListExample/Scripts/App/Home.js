@@ -7,7 +7,7 @@
                 var $module = $(this).closest("[data-module]");
                 var $reasonShow = $module.find("[data-show^=" + show + "]");
                 $reasonShow.each(function() {
-                    var visible = $(this).data("show") == show + "-" + val;
+                    var visible = $(this).data("show") === show + "-" + val;
                     $(this).toggle(visible);
                 });
             } else {

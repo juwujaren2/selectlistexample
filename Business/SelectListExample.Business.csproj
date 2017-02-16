@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="UnsoldReason.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLocationUnit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

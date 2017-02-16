@@ -64,9 +64,11 @@
     <None Include="SelectListExampleDb.publish.xml" />
     <None Include="SelectListExampleDb_1.publish.xml" />
     <None Include="DataScripts\Datascript_UnsoldReason.sql" />
+    <None Include="DataScripts\Datascript_UserLocationUnit.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Table_UnsoldReason.sql" />
+    <Build Include="Tables\Table_UserLocationUnit.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Table_UnsoldReasonOther.sql" />

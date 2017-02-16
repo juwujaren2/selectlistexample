@@ -1,6 +1,8 @@
-﻿using SelectListExample.Infrastructure;
+﻿using System.Collections.Generic;
+using SelectListExample.Infrastructure;
 using System.Linq;
 using System.Web.Mvc;
+using Business;
 
 namespace SelectListExample.Web.Controllers
 {
@@ -30,6 +32,13 @@ namespace SelectListExample.Web.Controllers
 
             return View();
         }
+
+        public JsonResult GetUnitDataJson(string q)
+        {
+            List<UserLocationUnit> data = _db.UserLocationUnits.Where(x => x.UserLocation.ToLower().Contains(q.ToLower()) || x.ManagerLastName.ToLower().Contains(q.ToLower())).ToList();
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
         private void SetUnsoldReasonsViewBag()
         {
             var items = _db.UnsoldReasons.Where(x => x.Text.ToLower() != "other").OrderBy(x => x.Text).ToList();

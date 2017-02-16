@@ -1,0 +1,21 @@
+﻿SET IDENTITY_INSERT [dbo].[UserLocationUnit] ON 
+
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (1, N'Atlanta Group Business Centers', N'AGBC', N'McDonough AGBC', N'Andre-Louie', N'Moreau')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (2, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales Management', N'Chet', N'Morton')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (3, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales Core', N'Bridget', N'Jones')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (4, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Special Sales', N'Catherine', N'Earnshaw')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (5, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Customer Service', N'Kilgore', N'Trout')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (6, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales Web', N'Tess', N'Durbeyfield')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (7, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales New', N'Mira', N'Lapidoth')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (8, N'Watergate Business Contact Center', N'WGB', N'Watergate Sales', N'Henry', N'Crawford')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (9, N'Information Technology Center', N'ITC', N'ITC Group', N'Adam', N'Trask')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (10, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Quality Assurance', N'Sonya', N'Rostova')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (11, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales New', N'Bridget', N'Jones')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (12, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales New', N'Tess', N'Durbeyfield')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (13, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales Web', N'Bridget', N'Jones')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (14, N'Atlanta Group Business Centers', N'AGBC', N'AGBC Sales Core', N'Tess', N'Durbeyfield')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (15, N'South Central Business Accounts', N'SCBA', N'South Central Sales', N'Melanie', N'Hamilton')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (16, N'Northwest Regional Centers', N'NWRC', N'Northwest Sales', N'Bellatrix', N'Lestrange')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (17, N'Marketing Group', N'MG', N'Marketing', N'Esther', N'Havisham')
+INSERT [dbo].[UserLocationUnit] ([UserLocationUnitId], [LongName], [ShortName], [UserLocation], [ManagerFirstName], [ManagerLastName]) VALUES (18, N'Risk Assessment Center', N'RAC', N'RAC', N'David', N'Grantland')
+SET IDENTITY_INSERT [dbo].[UserLocationUnit] OFF

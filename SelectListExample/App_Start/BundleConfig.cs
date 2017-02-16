@@ -24,12 +24,14 @@ namespace SelectListExample.Web
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/bootstrap-select.js",
+                      "~/Scripts/ajax-bootstrap-select.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/bootstrap-select.css"));
+                      "~/Content/bootstrap-select.css",
+                      "~/Content/ajax-bootstrap-select.css"));
         }
     }
 }
